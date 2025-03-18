@@ -101,4 +101,4 @@ def process_ocr(n_clicks, contents, lang):
     return translated_text, f"/assets/output_{timestamp}.mp3"
 
 if __name__ == "__main__":
-    app.run_server(debug=True, dev_tools_hot_reload=False)
+    app.run(host="0.0.0.0", debug=False)
